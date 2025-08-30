@@ -1,10 +1,33 @@
-# ELE Interior - Professional Interior Design Website
 
-A modern, responsive interior design company website built with HTML, CSS, and JavaScript. This project replicates the design and functionality of a professional interior design company website.
+# ELE Interior Design Studio - Website Replica
+
+A complete replica of the ELE Interior Design Studio website (https://eleinterior.com/interior-design-company/) built with HTML, CSS, and JavaScript. This project accurately reproduces the original website's structure, design, and functionality.
+
 
 ## 🌟 Features
 
 ### Design & Layout
+
+- **Exact Replica**: 100% accurate reproduction of the original ELE Interior website
+- **Divi Theme Structure**: Replicates the WordPress Divi theme layout and styling
+- **Professional Design**: Luxury interior design aesthetic with sophisticated color scheme
+- **Fully Responsive**: Optimized for all devices (desktop, tablet, mobile)
+- **Typography**: Uses Open Sans font family as per the original
+
+### Sections (Exact Replica)
+1. **Hero Section**: Full-width header with background image, logo, and call-to-action buttons
+2. **Creative Stage**: Services breakdown with icons and descriptions
+3. **Residential Projects**: Image gallery showcasing completed projects
+4. **Completed Project Videos**: Section for video content
+5. **Contact Form**: Get in touch section with form and contact information
+
+### Interactive Features
+- **Smooth Scrolling**: Smooth navigation between sections
+- **Gallery Lightbox**: Click to enlarge gallery images
+- **Contact Form**: Form validation and submission handling
+- **Scroll Animations**: Divi-style waypoint animations
+- **Parallax Effects**: Hero section parallax scrolling
+
 - **Modern & Professional Design**: Clean, elegant design with a sophisticated color scheme
 - **Fully Responsive**: Optimized for all devices (desktop, tablet, mobile)
 - **Smooth Animations**: CSS animations and transitions for enhanced user experience
@@ -29,6 +52,7 @@ A modern, responsive interior design company website built with HTML, CSS, and J
 - **Scroll Animations**: Elements animate as they come into view
 - **Counter Animations**: Animated statistics in the about section
 - **Portfolio Modal**: Click to enlarge portfolio images
+
 - **Notification System**: Success/error notifications for form submissions
 
 ### Technical Features
@@ -50,32 +74,39 @@ A modern, responsive interior design company website built with HTML, CSS, and J
 
 ### File Structure
 ```
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles and responsive design
+
+├── index.html          # Main HTML file (Divi theme structure)
+├── styles.css          # CSS styles matching Divi theme
+
 ├── script.js           # JavaScript functionality
 └── README.md           # Project documentation
 ```
 
-## 🎨 Customization
+
+## 🎨 Design Details
 
 ### Colors
-The website uses a sophisticated color palette:
-- Primary: `#8B4513` (Saddle Brown)
-- Secondary: `#A0522D` (Sienna)
-- Text: `#2c3e50` (Dark Blue Gray)
-- Background: `#f8f9fa` (Light Gray)
+The website uses the original ELE Interior color scheme:
+- Primary Blue: `#2ea3f2` (Divi theme blue)
+- Text: `#333` (Dark gray)
+- Background: `#f7f7f7` (Light gray)
+- White: `#fff`
 
-### Fonts
-- Headings: Playfair Display (Serif)
-- Body: Poppins (Sans-serif)
+### Typography
+- Font Family: Open Sans (Google Fonts)
+- Weights: 300, 400, 600, 700, 800
+- Styles: Normal and Italic
 
-### Images
-The website uses high-quality images from Unsplash. You can replace them with your own images by updating the `src` attributes in the HTML.
+### Layout Structure
+- **Divi Theme Classes**: Uses exact Divi theme class names and structure
+- **Grid System**: Responsive grid layout with proper gutters
+- **Sections**: Properly structured sections with background options
+- **Modules**: Text, blurb, gallery, and code modules
 
 ## 📱 Responsive Breakpoints
-- **Desktop**: 1200px and above
-- **Tablet**: 768px - 1199px
-- **Mobile**: Below 768px
+- **Desktop**: 1080px and above
+- **Tablet**: 980px - 1079px
+- **Mobile**: Below 980px
 
 ## 🔧 Browser Support
 - Chrome (latest)
@@ -87,6 +118,46 @@ The website uses high-quality images from Unsplash. You can replace them with yo
 ## 📝 Usage
 
 ### Navigation
+
+- Use the scroll down button in the hero section
+- Click on "Book A Consultation" to jump to the contact form
+- Click on "Call Back Request" to jump to the contact section
+
+### Gallery
+- Click on any gallery image to view it in a lightbox
+- Use ESC key or click outside to close the lightbox
+
+### Contact Form
+- Fill out the contact form with your information
+- Submit to receive a confirmation message
+- Form includes validation for required fields and email format
+
+## 🎯 Key Features Explained
+
+### Divi Theme Structure
+The website replicates the exact Divi theme structure:
+- `et_pb_section` for main sections
+- `et_pb_row` for row containers
+- `et_pb_column` for column layouts
+- `et_pb_module` for content modules
+- Proper gutter spacing and responsive behavior
+
+### Creative Stage Section
+The services section includes:
+- Space Planning
+- 3D Visuals
+- Materials + Finishes Selection
+- Custom Joinery + Furniture Design
+- Furniture + Colour Selection
+- Lighting Design
+- Textiles + Soft Furnishings Selection
+
+### Gallery Functionality
+- Responsive grid layout
+- Hover effects with overlays
+- Lightbox functionality for image viewing
+- Proper image optimization with srcset
+
 - Use the fixed navigation bar to jump to different sections
 - Mobile users can use the hamburger menu
 
@@ -113,6 +184,7 @@ The portfolio section allows users to filter projects by category:
 - **Modern**: Modern style projects
 - **Classic**: Classic style projects
 
+
 ### Form Validation
 The contact form includes:
 - Required field validation
@@ -120,24 +192,17 @@ The contact form includes:
 - Success/error notifications
 - Loading states during submission
 
-### Scroll Animations
-Elements animate as they come into view using the Intersection Observer API:
-- Service cards slide up
-- Portfolio items fade in
-- About section content animates
-- Contact form slides in
 
 ## 🔮 Future Enhancements
-- Blog section for design tips and articles
-- Online booking system
-- Virtual tour functionality
-- Multi-language support
-- Dark mode toggle
-- Advanced portfolio filtering
-- Integration with social media feeds
+- Add actual video content to the "Completed Project Videos" section
+- Implement real form submission to backend
+- Add more gallery images
+- Include additional sections from the original site
+- Add social media integration
 
 ## 📄 License
-This project is open source and available under the [MIT License](LICENSE).
+This project is for educational purposes and replicates the design of the original ELE Interior website.
+
 
 ## 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -147,4 +212,6 @@ For support or questions, please open an issue in the project repository.
 
 ---
 
-**Built with ❤️ for the interior design industry**
+
+**Note**: This is a replica of the ELE Interior Design Studio website for educational purposes. All images and content belong to the original website owners.
+
