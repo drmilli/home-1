@@ -10,6 +10,7 @@ html {
 }
 
 body {
+
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #333;
@@ -132,9 +133,11 @@ body {
     position: relative;
     z-index: 2;
     max-width: 800px;
+
     margin: 0 auto;
     padding: 0 20px;
 }
+
 
 .header-content {
     padding: 60px 0;
@@ -393,12 +396,14 @@ body {
 .form-group textarea:focus {
     outline: none;
     border-color: #2ea3f2;
+
 }
 
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
 }
+
 
 /* Animation Classes */
 .et-waypoint {
@@ -573,4 +578,5 @@ html {
 
 .et_pb_gallery_item:hover a::before {
     opacity: 1;
+
 }

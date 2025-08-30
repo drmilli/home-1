@@ -1,3 +1,4 @@
+
 // Smooth scrolling for anchor links
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for all anchor links
@@ -74,11 +75,13 @@ if (contactForm) {
     });
 }
 
+
 // Email validation function
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
 
 // Notification system
 function showNotification(message, type) {
@@ -113,7 +116,9 @@ function showNotification(message, type) {
         animation: slideInRight 0.3s ease;
     `;
     
+
     // Add notification styles to head if not already present
+
     if (!document.querySelector('#notification-styles')) {
         const style = document.createElement('style');
         style.id = 'notification-styles';
@@ -159,6 +164,7 @@ function showNotification(message, type) {
         }
     }, 5000);
 }
+
 
 // Scroll animations for Divi waypoints
 function initScrollAnimations() {
