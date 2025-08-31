@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Meta Lab Design Studio</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style><meta name='robots' content='max-image-preview:large' />
+<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+<link rel="alternate" type="application/rss+xml" title="Meta Lab Design Studio &raquo; Feed" href="https://eleinterior.com/interior-design-company/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Meta Lab Design Studio &raquo; Comments Feed" href="https://eleinterior.com/interior-design-company/comments/feed/" />
+<meta content="Divi v.4.17.4" name="generator"/><style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://eleinterior.com/interior-design-company/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='grw-public-main-css-css' href='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/css/public-main.css?ver=5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://eleinterior.com/interior-design-company/wp-content/themes/Divi/style.min.css?ver=4.17.4' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-dynamic-css' href='https://eleinterior.com/interior-design-company/wp-content/et-cache/5/et-divi-dynamic-tb-372-tb-373-5.css?ver=1756477042' type='text/css' media='all' />
+
+
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://eleinterior.com/interior-design-company/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feleinterior.com%2Finterior-design-company%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://eleinterior.com/interior-design-company/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feleinterior.com%2Finterior-design-company%2F&#038;format=xml" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link rel="icon" href="logo.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="logo1.png" />
+<meta name="msapplication-TileImage" content="" />
+<link rel="stylesheet" id="et-core-unified-tb-372-tb-373-5-cached-inline-styles" href="https://eleinterior.com/interior-design-company/wp-content/et-cache/5/et-core-unified-tb-372-tb-373-5.min.css?ver=1756477043" />
+<link rel="stylesheet" id="et-core-unified-5-cached-inline-styles" href="https://eleinterior.com/interior-design-company/wp-content/et-cache/5/et-core-unified-5.min.css?ver=1756477043" />
+</head>
+
+<body class="home wp-singular page-template-default page page-id-5 wp-theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db">
+<div id="page-container">
+<div id="et-boc" class="et-boc">
+		<header class="et-l et-l--header">
+		<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0_tb_header et_section_regular" >	
+		</div>		</div>
+	    </header>
+	<div id="et-main-area">
+<div id="main-content">
+				<article id="post-5" class="post-5 page type-page status-publish hentry">
+					<div class="entry-content">
+					<div class="et-l et-l--post">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0 et_pb_with_background et_pb_fullwidth_section et_section_regular section_has_divider et_pb_bottom_divider" >
+				<section class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0 et_pb_text_align_center et_pb_bg_layout_dark">
+				<div class="et_pb_fullwidth_header_container center">
+					<div class="header-content-container center">
+					<div class="header-content">
+						<img loading="lazy" decoding="async" width="274" height="100" src="logo2.png" title="" alt="" class="header-logo wp-image-572" />
+						<h1 class="et_pb_module_header">Welcome to Meta Lab Design</h1>
+						<div class="et_pb_header_content_wrapper"><p><strong>Elevate your space with Meta Lab</strong><span>: We provide services to our clients not only in the UAE but also in Saudi Arabia, Oman, Kuwait, Qatar, and worldwide. Our team of experts is committed to transforming your vision into reality, creating interiors that are visually stunning and functional. Experience the perfect blend of luxury, comfort, and style with our bespoke interior design solutions.<br /></span><strong>Your dream space is just one click away!</strong></p></div>
+						<a class="et_pb_button et_pb_more_button et_pb_button_one" href="">Book A Consultation</a><a class="et_pb_button et_pb_more_button et_pb_button_two" href="#call-back">Call Back Request</a>
+					</div>
+				</div>
+					
+				</div>
+				<div class="et_pb_fullwidth_header_overlay"></div>
+				<div class="et_pb_fullwidth_header_scroll"><a href="#" class="scroll-down-container">
+					<span class="scroll-down et-pb-icon">;</span>
+					
+					
+				</a></div>
+			</section>
+				
+				<div class="et_pb_bottom_inside_divider et-no-transition"></div>
+			</div><div id="free-consultation" class="et_pb_section et_pb_section_1 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0 et_pb_equal_columns">
+				<div class="et_pb_column et_pb_column_1_3 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>CREATIVE STAGE</h2></div>
+			</div><div class="et_pb_module et_pb_divider et_pb_divider_0 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>Space Planning</p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>3D Visuals</p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_2  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>Materials + Finishes Selection</p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_3  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>Custom Joinery + Furniture Design</p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_4  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon">Z</span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>Furniture + Colour Selection</p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_5  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p><span>Lighting Design</span></p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_6  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>Textiles + Soft Furnishings Selection</p></div>
+					</div>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>TECHNICAL STAGE</h2></div>
+			</div><div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_blurb et_pb_blurb_7  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description">CAD Drawing Documentation</div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_8  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>	Schedules + Specifications</p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_9  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon">h</span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>Specifications for construction</p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_10  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon">i</span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>	Tender Documentation</p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_11  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>	Assessing Workplace Requirements</p></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_12  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon">]</span></span></div>
+					<div class="et_pb_blurb_container">
+						
+						<div class="et_pb_blurb_description"><p>	Referring, Sourcing + Evaluating Contractors</p></div>
+					</div>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>Book Design Consultation</h2></div>
+			</div><div class="et_pb_module et_pb_divider et_pb_divider_2 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div>
+			<div id="booking-form" class="et_pb_module et_pb_contact_form_0 booking-form et_pb_contact_form_container clearfix" data-form_unique_num="0" data-form_unique_id="02d00217-d521-439e-ab76-7eeb09708e2e">
+				
+				
+				
+				
+				
+				<div class="et-pb-contact-message"></div>
+				
+				<div class="et_pb_contact">
+					<form class="et_pb_contact_form clearfix" method="post" action="https://eleinterior.com/interior-design-company/">
+						<p class="et_pb_contact_field et_pb_contact_field_0 et_pb_contact_field_half" data-id="name" data-type="input">
+				
+				
+				
+				
+				<label for="et_pb_contact_name_0" class="et_pb_contact_form_label">Your Name</label>
+				<input type="text" id="et_pb_contact_name_0" class="input" value="" name="et_pb_contact_name_0" data-required_mark="required" data-field_type="input" data-original_id="name" placeholder="Your Name">
+			</p><p class="et_pb_contact_field et_pb_contact_field_1 et_pb_contact_field_half et_pb_contact_field_last" data-id="email" data-type="email">
+				
+				
+				
+				
+				<label for="et_pb_contact_email_0" class="et_pb_contact_form_label">Email Address</label>
+				<input type="text" id="et_pb_contact_email_0" class="input" value="" name="et_pb_contact_email_0" data-required_mark="required" data-field_type="email" data-original_id="email" placeholder="Email Address">
+			</p><p class="et_pb_contact_field et_pb_contact_field_2 et_pb_contact_field_last" data-id="phone" data-type="input">
+				
+				
+				
+				
+				<label for="et_pb_contact_phone_0" class="et_pb_contact_form_label">Phone</label>
+				<input type="text" id="et_pb_contact_phone_0" class="input" value="" name="et_pb_contact_phone_0" data-required_mark="required" data-field_type="input" data-original_id="phone" placeholder="Phone" pattern="[0-9\s-]*" title="Only numbers allowed.">
+			</p><p class="et_pb_contact_field et_pb_contact_field_3 et_pb_contact_field_last" data-id="location" data-type="input">
+				
+				
+				
+				
+				<label for="et_pb_contact_location_0" class="et_pb_contact_form_label">Location</label>
+				<input type="text" id="et_pb_contact_location_0" class="input" value="" name="et_pb_contact_location_0" data-required_mark="required" data-field_type="input" data-original_id="location" placeholder="Location" pattern="[A-Z|a-z|\s-]*" title="Only letters allowed.">
+			</p><p class="et_pb_contact_field et_pb_contact_field_4 et_pb_contact_field_last" data-id="project" data-type="select">
+				
+				
+				
+				
+				<label for="et_pb_contact_project_0" class="et_pb_contact_form_label">Type of Project</label>
+				<select id="et_pb_contact_project_0" class="et_pb_contact_select input" name="et_pb_contact_project_0" data-required_mark="required" data-field_type="select" data-original_id="project">
+						<option value="">Type of Project</option><option value="Hospitality">Hospitality</option><option value="Commercial">Commercial</option><option value="Residential Apartment">Residential Apartment</option><option value="Residential Villa">Residential Villa</option><option value="Other">Other</option>
+					</select>
+			</p><p class="et_pb_contact_field et_pb_contact_field_5 et_pb_contact_field_last" data-id="status" data-type="select">
+				
+				
+				
+				
+				<label for="et_pb_contact_status_0" class="et_pb_contact_form_label">Current Status</label>
+				<select id="et_pb_contact_status_0" class="et_pb_contact_select input" name="et_pb_contact_status_0" data-required_mark="required" data-field_type="select" data-original_id="status">
+						<option value="">Current Status</option><option value="Underconstruction">Underconstruction</option><option value="New Villa">New Villa</option><option value="Renovation">Renovation</option>
+					</select>
+			</p><p class="et_pb_contact_field et_pb_contact_field_6 et_pb_contact_field_last" data-id="start" data-type="select">
+				
+				
+				
+				
+				<label for="et_pb_contact_start_0" class="et_pb_contact_form_label">When do you want to start?</label>
+				<select id="et_pb_contact_start_0" class="et_pb_contact_select input" name="et_pb_contact_start_0" data-required_mark="required" data-field_type="select" data-original_id="start">
+						<option value="">When do you want to start?</option><option value="ASAP">ASAP</option><option value="1 Month">1 Month</option><option value="3 Months">3 Months</option><option value="6 Months">6 Months</option>
+					</select>
+			</p>
+						<input type="hidden" value="et_contact_proccess" name="et_pb_contactform_submit_0"/>
+						<div class="et_contact_bottom_container">
+							
+			<div class="et_pb_contact_right">
+				<p class="clearfix">
+					<span class="et_pb_contact_captcha_question">6 + 6</span> = <input type="text" size="2" class="input et_pb_contact_captcha" data-first_digit="6" data-second_digit="6" value="" name="et_pb_contact_captcha_0" data-required_mark="required" autocomplete="off">
+				</p>
+			</div>
+							<button type="submit" name="et_builder_submit_button" class="et_pb_contact_submit et_pb_button">Book Now</button>
+						</div>
+						<input type="hidden" id="_wpnonce-et-pb-contact-form-submitted-0" name="_wpnonce-et-pb-contact-form-submitted-0" value="4af043af99" /><input type="hidden" name="_wp_http_referer" value="/interior-design-company/" />
+					</form>
+				</div>
+			</div>
+			
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>Residential Projects</h2></div>
+			</div><div class="et_pb_module et_pb_gallery et_pb_gallery_1  et_pb_bg_layout_light et_pb_gallery_grid">
+				<div class="et_pb_gallery_items et_post_gallery clearfix" data-per_page="20"><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_0">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Villa-Design.jpg" title="Villa-Design">
+					<img fetchpriority="high" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Villa-Design-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Villa-Design.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Villa-Design-400x516.jpg 480w" sizes="(max-width:479px) 479px, 100vw" class="wp-image-539" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_1">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Entrance-Area-Design-2-1.jpg" title="Entrance-Area-Design-2">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Entrance-Area-Design-2-1-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Entrance-Area-Design-2-1.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Entrance-Area-Design-2-1-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-545" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_2">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/entrance-area.jpg" title="entrance-area">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/entrance-area-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/entrance-area.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/entrance-area-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-543" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_3">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Entrance-Area-Design-2.jpg" title="Entrance-Area-Design">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Entrance-Area-Design-2-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Entrance-Area-Design-2.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Entrance-Area-Design-2-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-544" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_4">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Bedroom-design-1.jpg" title="Bedroom-design">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Bedroom-design-1-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Bedroom-design-1.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Bedroom-design-1-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-542" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_5">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Bathroom-Design-1.jpg" title="Bathroom-Design">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Bathroom-Design-1-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Bathroom-Design-1.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Bathroom-Design-1-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-540" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_6">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Entrance-Area-Design-3.jpg" title="Entrance-Area-Design-3">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Entrance-Area-Design-3-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Entrance-Area-Design-3.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Entrance-Area-Design-3-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-546" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_7">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/bathroom-design-2.jpg" title="bathroom-design-2">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/bathroom-design-2-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/bathroom-design-2.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/bathroom-design-2-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-541" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_8">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Stair-Area-Design.jpg" title="Stair-Area-Design">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Stair-Area-Design-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Stair-Area-Design.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Stair-Area-Design-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-554" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_9">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Area-Design-1.jpg" title="Living-Area-Design">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Area-Design-1-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Area-Design-1.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Area-Design-1-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-548" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_10">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Room-Design.jpg" title="Living-Room-Design">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Room-Design-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Room-Design.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Room-Design-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-549" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_11">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Room-Design-2.jpg" title="Living-Room-Design-2">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Room-Design-2-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Room-Design-2.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Room-Design-2-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-550" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_12">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/family-living-area.jpg" title="family-living-area">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/family-living-area-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/family-living-area.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/family-living-area-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-547" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_13">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Modern-Living-Room.jpg" title="Modern-Living-Room">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Modern-Living-Room-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Modern-Living-Room.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Modern-Living-Room-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-552" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_14">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Room-Design-3.jpg" title="Living-Room-Design-3">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Room-Design-3-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Room-Design-3.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Living-Room-Design-3-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-551" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_15">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Modern-Living-Room-2.jpg" title="Modern-Living-Room-2">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Modern-Living-Room-2-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Modern-Living-Room-2.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2024/01/Modern-Living-Room-2-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-553" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_16">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/6.jpg" title="6">
+					<img loading="lazy" decoding="async" width="800" height="1200" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/6-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/6.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/6-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-471" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_17">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/8.jpg" title="8">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/8-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/8.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/8-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-473" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_18">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/5.jpg" title="5">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/5-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/5.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/5-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-470" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_1_19">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/4.jpg" title="4">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/4-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/4.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/4-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-387" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div></div></div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_2">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>Completed Project Videos</h2></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_3">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/867044355?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Alto - Dubai Hills Villa"></iframe></div>
+<p><script src="https://player.vimeo.com/api/player.js"></script></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div style="padding: 56.25% 0 0 0; position: relative;"><iframe src="https://player.vimeo.com/video/851189619?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="ELE INTERIOR Piedra Villa - MBR District 1"></iframe></div>
+<p>
+<script src="https://player.vimeo.com/api/player.js"></script>
+</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_4">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_7  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1006104460?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Brisa Villa - Dubai Hills by ELE Interior"></iframe></div>
+<p><script src="https://player.vimeo.com/api/player.js"></script></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_8  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div style="padding: 56.25% 0 0 0; position: relative;"><iframe src="https://player.vimeo.com/video/818311204?h=18034a2fec&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="ELE Interior - Commercial Clinic"></iframe></div>
+<p>
+<script src="https://player.vimeo.com/api/player.js"></script>
+</p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_5">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_9  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/899133910?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Mirador Villa - Umm Al Sheif - Interior Design"></iframe></div>
+<p><script src="https://player.vimeo.com/api/player.js"></script></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/818311514?h=4a1ceb161c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Video 01 Version 03 (1).mp4"></iframe></div>
+<p><script src="https://player.vimeo.com/api/player.js"></script></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_6">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_11  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>Commercial Projects</h2></div>
+			</div><div class="et_pb_module et_pb_gallery et_pb_gallery_2  et_pb_bg_layout_light et_pb_gallery_grid">
+				<div class="et_pb_gallery_items et_post_gallery clearfix" data-per_page="12"><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_0">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/13.jpg" title="13">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/13-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/13.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/13-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-475" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_1">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/9.jpg" title="9">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/9-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/9.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/9-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-476" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_2">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/11-1.jpg" title="11">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/11-1-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/11-1.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/11-1-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-478" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_3">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/12.jpg" title="12">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/12-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/12.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/12-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-479" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_4">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/5.jpg" title="5">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/5-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/5.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/5-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-388" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_5">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/6.jpg" title="6">
+					<img loading="lazy" decoding="async" width="1200" height="800" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/6-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/6.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/6-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-389" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_6">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/7.jpg" title="7">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/7-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/7.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/7-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-390" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div><div class="et_pb_gallery_item et_pb_grid_item et_pb_bg_layout_light et_pb_gallery_item_2_7">
+				<div class='et_pb_gallery_image portrait'>
+					<a href="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/8.jpg" title="8">
+					<img loading="lazy" decoding="async" width="400" height="516" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/8-400x516.jpg" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/8.jpg 479w, https://eleinterior.com/interior-design-company/wp-content/uploads/2022/01/8-400x516.jpg 480w" sizes="auto, (max-width:479px) 479px, 100vw" class="wp-image-391" />
+					<span class="et_overlay"></span>
+				</a>
+				</div></div></div></div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div id="call-back" class="et_pb_section et_pb_section_5 et_pb_with_background et_pb_inner_shadow et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_7">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_12  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				
+			<div id="call-back" class="et_pb_module et_pb_contact_form_1 call-back et_pb_contact_form_container clearfix  et_pb_text_align_left" data-form_unique_num="1" data-form_unique_id="100cd619-9db9-41aa-9ee6-9788d8649588">
+				
+				
+				
+				
+				<h1 class="et_pb_contact_main_title">Request for call back</h1>
+				<div class="et-pb-contact-message"></div>
+				
+				<div class="et_pb_contact">
+					<form class="et_pb_contact_form clearfix" method="post" action="https://eleinterior.com/interior-design-company/">
+						<p class="et_pb_contact_field et_pb_contact_field_7 et_pb_contact_field_half" data-id="name" data-type="input">
+				
+				
+				
+				
+				<label for="et_pb_contact_name_1" class="et_pb_contact_form_label">Your Name</label>
+				<input type="text" id="et_pb_contact_name_1" class="input" value="" name="et_pb_contact_name_1" data-required_mark="required" data-field_type="input" data-original_id="name" placeholder="Your Name">
+			</p><p class="et_pb_contact_field et_pb_contact_field_8 et_pb_contact_field_half et_pb_contact_field_last" data-id="phone" data-type="input">
+				
+				
+				
+				
+				<label for="et_pb_contact_phone_1" class="et_pb_contact_form_label">Phone Number</label>
+				<input type="text" id="et_pb_contact_phone_1" class="input" value="" name="et_pb_contact_phone_1" data-required_mark="required" data-field_type="input" data-original_id="phone" placeholder="Phone Number" pattern="[0-9\s-]*" title="Only numbers allowed.">
+			</p>
+						<input type="hidden" value="et_contact_proccess" name="et_pb_contactform_submit_1"/>
+						<div class="et_contact_bottom_container">
+							
+							<button type="submit" name="et_builder_submit_button" class="et_pb_contact_submit et_pb_button">Submit</button>
+						</div>
+						<input type="hidden" id="_wpnonce-et-pb-contact-form-submitted-1" name="_wpnonce-et-pb-contact-form-submitted-1" value="4af043af99" /><input type="hidden" name="_wp_http_referer" value="/interior-design-company/" />
+					</form>
+				</div>
+			</div>
+			
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_6 et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_8">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_13  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_12  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>Awards</h2>
+<p><span>Some of our best work has been recognized and we are honored every year to be nominated and won from some of the most prestigious awarding bodies in the world. </span><span>This is the ultimate measure of excellence and acknowledges Designers and Architects from around the globe, and we are very proud to be showcased alongside some of the World’s Best, year in and year out. </span></p></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_9">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_14  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_image et_pb_image_0">
+				
+				
+				
+				
+				<span class="et_pb_image_wrap "><img loading="lazy" decoding="async" width="520" height="185" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/ele-awards-all-23.png" alt="" title="ele-awards-all-23" srcset="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/ele-awards-all-23.png 520w, https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/ele-awards-all-23-480x171.png 480w" sizes="auto, (min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 520px, 100vw" class="wp-image-488" /></span>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_7 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_10">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_13  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2 style="text-align: center;"><strong>Client Reviews</strong></h2></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_11">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_14  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner">        <div class="wp-gr wpac" data-id="481" data-layout="slider" data-exec="false" data-options='{"text_size":"","trans":{"read more":"read more"}}'><div class="grw-row grw-row-m" data-count="6" data-offset="6" data-options='{"speed":3,"autoplay":"1","mousestop":"1"}'><div class="grw-content"><div class="grw-content-inner"><div class="grw-reviews"><div class="grw-review"><div class="grw-review-inner grw-backgnd"><div class="wp-google-left"><img decoding="async" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/ChIJRXanCOhrXz4RBq83i4itCW8_742a9b1545342f2007c4b316b8a4c361.jpg" loading="lazy" class="rplg-review-avatar" alt="K M" width="50" height="50" title="K M" onerror="if(this.src!='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/img/guest.png')this.src='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/img/guest.png';" ><a href="https://www.google.com/maps/contrib/103108095458619704426/reviews" class="wp-google-name" target="_blank" rel="nofollow noopener">K M</a><div class="wp-google-time" data-time="1681567001">13:56 15 Apr 23</div></div><div class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span></span></div><div><div class="wp-google-feedback" ><span class="wp-google-text">Renovations are usually hectic but Lea and the team made it so smooth. The team was very professional and patient with me, the design and the outcome has exceed all my expectations!</span></div></div><svg viewBox="0 0 512 512" height="18" width="18"><g fill="none" fill-rule="evenodd"><path d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z" fill="#4285f4"/><path d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z" fill="#34a853"/><path d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z" fill="#fbbc05"/><path d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z" fill="#ea4335"/><path d="M20 20h472v472H20V20z"/></g></svg></div></div><div class="grw-review"><div class="grw-review-inner grw-backgnd"><div class="wp-google-left"><img decoding="async" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/ChIJRXanCOhrXz4RBq83i4itCW8_b142eec1ef81cb4d9200ca9a36b18bfc.jpg" loading="lazy" class="rplg-review-avatar" alt="JP W" width="50" height="50" title="JP W" onerror="if(this.src!='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/img/guest.png')this.src='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/img/guest.png';" ><a href="https://www.google.com/maps/contrib/109849768172945546697/reviews" class="wp-google-name" target="_blank" rel="nofollow noopener">JP W</a><div class="wp-google-time" data-time="1679557547">07:45 23 Mar 23</div></div><div class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span></span></div><div><div class="wp-google-feedback" ><span class="wp-google-text">Very happy with the work that Ele Interior's team did for us.We wanted some upgrades in our Villa for the living room and bedrooms. The team has created such an amazing experience for us how we can use the space better and am just in love with it! Thank you for being so professional and dedicated!</span></div></div><svg viewBox="0 0 512 512" height="18" width="18"><g fill="none" fill-rule="evenodd"><path d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z" fill="#4285f4"/><path d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z" fill="#34a853"/><path d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z" fill="#fbbc05"/><path d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z" fill="#ea4335"/><path d="M20 20h472v472H20V20z"/></g></svg></div></div><div class="grw-review"><div class="grw-review-inner grw-backgnd"><div class="wp-google-left"><img decoding="async" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/ChIJRXanCOhrXz4RBq83i4itCW8_93af500af7162a7046fe71bb93cb55f6.jpg" loading="lazy" class="rplg-review-avatar" alt="Valentina Ducker" width="50" height="50" title="Valentina Ducker" onerror="if(this.src!='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/img/guest.png')this.src='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/img/guest.png';" ><a href="https://www.google.com/maps/contrib/117376317630168294369/reviews" class="wp-google-name" target="_blank" rel="nofollow noopener">Valentina Ducker</a><div class="wp-google-time" data-time="1679521453">21:44 22 Mar 23</div></div><div class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span></span></div><div><div class="wp-google-feedback" ><span class="wp-google-text">Ele Interior curated the full project of renovation for our villa in Dubai.The team welcomed us with a smile in their beautiful showroom, they were always very professional and with a very organised approach. From the first meeting they understood immediately our taste and what we were looking for, making our experience very pleasant and exciting.In particular, the lovely Waseem handled the whole project incredibly, advising with smart solutions and delivering what was promised always making sure we were happy each step of the way. He managed the whole experience seamlessly.Also, another member of the team, the designer Bethany, did an excellent job understanding our style and being very helpful in the selection of furniture and materials which made the process from overwhelming, very smooth.We are so grateful to Ele Interior for designing our beautiful home and for bringing our vision to life. They truly exceeded our expectations!</span></div></div><svg viewBox="0 0 512 512" height="18" width="18"><g fill="none" fill-rule="evenodd"><path d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z" fill="#4285f4"/><path d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z" fill="#34a853"/><path d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z" fill="#fbbc05"/><path d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z" fill="#ea4335"/><path d="M20 20h472v472H20V20z"/></g></svg></div></div><div class="grw-review"><div class="grw-review-inner grw-backgnd"><div class="wp-google-left"><img decoding="async" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/ChIJRXanCOhrXz4RBq83i4itCW8_6d07ceba7db7c8c006a6c65d942d294f.jpg" loading="lazy" class="rplg-review-avatar" alt="Noora Almansoori" width="50" height="50" title="Noora Almansoori" onerror="if(this.src!='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/img/guest.png')this.src='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/img/guest.png';" ><a href="https://www.google.com/maps/contrib/114525714579312488314/reviews" class="wp-google-name" target="_blank" rel="nofollow noopener">Noora Almansoori</a><div class="wp-google-time" data-time="1679496008">14:40 22 Mar 23</div></div><div class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span></span></div><div><div class="wp-google-feedback" ></div></div><svg viewBox="0 0 512 512" height="18" width="18"><g fill="none" fill-rule="evenodd"><path d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z" fill="#4285f4"/><path d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z" fill="#34a853"/><path d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z" fill="#fbbc05"/><path d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z" fill="#ea4335"/><path d="M20 20h472v472H20V20z"/></g></svg></div></div><div class="grw-review"><div class="grw-review-inner grw-backgnd"><div class="wp-google-left"><img decoding="async" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/ChIJRXanCOhrXz4RBq83i4itCW8_7aac5546b77595de7f9ef989cfdf4e02.jpg" loading="lazy" class="rplg-review-avatar" alt="Diogo Nunes" width="50" height="50" title="Diogo Nunes" onerror="if(this.src!='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/img/guest.png')this.src='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/img/guest.png';" ><a href="https://www.google.com/maps/contrib/102228656508475030569/reviews" class="wp-google-name" target="_blank" rel="nofollow noopener">Diogo Nunes</a><div class="wp-google-time" data-time="1679492874">13:47 22 Mar 23</div></div><div class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span></span></div><div><div class="wp-google-feedback" ><span class="wp-google-text">Ms. Lealia was fantastic since day one. We had an introduction meeting with her team to understand what was our concept/opinion about the full home renovation/decoration and words can’t describe our happiness to see the final work. Unreal. On budget, on time and above our highest expectations. Truly recommend her services.</span></div></div><svg viewBox="0 0 512 512" height="18" width="18"><g fill="none" fill-rule="evenodd"><path d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z" fill="#4285f4"/><path d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z" fill="#34a853"/><path d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z" fill="#fbbc05"/><path d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z" fill="#ea4335"/><path d="M20 20h472v472H20V20z"/></g></svg></div></div><div class="grw-review"><div class="grw-review-inner grw-backgnd"><div class="wp-google-left"><img decoding="async" src="https://eleinterior.com/interior-design-company/wp-content/uploads/2023/10/ChIJRXanCOhrXz4RBq83i4itCW8_42301bef49c5d1f001ae71de8a2b9a6b.jpg" loading="lazy" class="rplg-review-avatar" alt="Deemah B" width="50" height="50" title="Deemah B" onerror="if(this.src!='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/img/guest.png')this.src='https://eleinterior.com/interior-design-company/wp-content/plugins/widget-google-reviews/assets/img/guest.png';" ><a href="https://www.google.com/maps/contrib/100073311703226346528/reviews" class="wp-google-name" target="_blank" rel="nofollow noopener">Deemah B</a><div class="wp-google-time" data-time="1679486280">11:58 22 Mar 23</div></div><div class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span><span class="wp-star"><svg width="17" height="17" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#fb8e28"></path></svg></span></span></div><div><div class="wp-google-feedback" ><span class="wp-google-text">Ele Interior are so elegant with their service and execution. They are very articulate and are focused on selecting high quality products. I love the space they created for me in my home. Highly recommend working with these designers!</span></div></div><svg viewBox="0 0 512 512" height="18" width="18"><g fill="none" fill-rule="evenodd"><path d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z" fill="#4285f4"/><path d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z" fill="#34a853"/><path d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z" fill="#fbbc05"/><path d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z" fill="#ea4335"/><path d="M20 20h472v472H20V20z"/></g></svg></div></div></div><div class="grw-controls"><div class="grw-btns grw-prev"><svg viewBox="0 0 24 24"><path d="M14.6,18.4L8.3,12l6.4-6.4l0.7,0.7L9.7,12l5.6,5.6L14.6,18.4z"></path></svg></div><div class="grw-btns grw-next"><svg viewBox="0 0 24 24"><path d="M9.4,18.4l-0.7-0.7l5.6-5.6L8.6,6.4l0.7-0.7l6.4,6.4L9.4,18.4z"></path></svg></div></div></div><div class="rpi-dots-wrap"><div class="rpi-dots"></div></div></div></div><img loading="lazy" decoding="async" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="js_loader" onload="(function(el, data) {var f = function() { window.grw_init ? grw_init(el, data) : setTimeout(f, 400) }; f() })(this, 'slider');" width="1" height="1" style="display:none"></div>        </div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+						</div>
+
+				
+				</article>
+
+			
+
+</div>
+
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div class="et_pb_section et_pb_section_0_tb_footer two-columns et_section_regular et_pb_section--fixed" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_button_module_wrapper et_pb_button_0_tb_footer_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a id="call-b" class="et_pb_button et_pb_button_0_tb_footer et_pb_bg_layout_light" href="tel:+971504394639" data-icon="&#xe090;">Call</a>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_button_module_wrapper et_pb_button_1_tb_footer_wrapper et_pb_button_alignment_center et_pb_module ">
+				<a id="whatsapp-c" class="et_pb_button et_pb_button_1_tb_footer et_pb_bg_layout_light" href="https://wa.me/971504394639?text=Hi%2C+We+are+interested+in+interior+design+services." target="_blank" data-icon="&#xf232;">WhatsApp</a>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_1_tb_footer et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1_tb_footer">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer  et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner">Copyright © 2024 &#8211; All Rights Reserved</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+			<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/interior-design-company\/*"},{"not":{"href_matches":["\/interior-design-company\/wp-*.php","\/interior-design-company\/wp-admin\/*","\/interior-design-company\/wp-content\/uploads\/*","\/interior-design-company\/wp-content\/*","\/interior-design-company\/wp-content\/plugins\/*","\/interior-design-company\/wp-content\/themes\/Divi\/*","\/interior-design-company\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+	<script type="text/javascript">
+	var GETGA_settings = {"first_delay":"1","second_delay":"2","debug":"none"};
+	var GETGA_events = [{"selector":"input[type=submit]","description":"All Submit Buttons","category":"Form Submits","action_type":"submit","action_label":"Form Submitted","label":"Form_Submitted_{TAG_HTML}_{PAGE_RELATIVE_URL}","status":"0"},{"selector":"#call-back form","description":"Call Back Form","category":"Call Back","action_type":"submit","action_label":"Submitted","label":"Form_Submitted_Call","status":"active"},{"selector":"#booking-form form","description":"Booking Form\t","category":"Booking Form","action_type":"submit","action_label":"Form Submitted","label":"Form_Submitted_Book","status":"active"}];
+	</script>
+	<script type="text/javascript" defer="defer" src="https://eleinterior.com/interior-design-company/wp-content/plugins/gravitate-event-tracking/gravitate_event_tracking.js?v=1.5.3"></script>
+
+	
+<style type="text/css">
+#okapi-wasb-button{
+    position: fixed;
+    z-index: 9999999;
+}
+    #okapi-wasb-button{
+        bottom: 15px;
+        right: 15px;
+    }
+#okapi-wasb-icon{
+    opacity: 0.95;
+    width: 60px;
+    height: 60px;
+}
+#okapi-wasb-icon:hover{
+    opacity: 1;
+}
+@media only screen and (min-width: 320px){
+    #okapi-wasb-button{
+				    display: none;
+		    }
+}
+@media only screen and (min-width: 768px){
+    #okapi-wasb-button{
+					display: block;
+		    }	    
+}
+@media only screen and (min-width: 992px){
+    #okapi-wasb-button{
+					display: block;
+		    }
+}
+</style>
+<a href="" id="okapi-wasb-button" target="_blank">
+	<img id="okapi-wasb-icon" src="https://eleinterior.com/interior-design-company/wp-content/plugins/wa-sticky-button/assets/default.png">
+</a>    <!-- Meta Pixel Event Code -->
+    <script type='text/javascript'>
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+        if( "fb_pxl_code" in event.detail.apiResponse){
+          eval(event.detail.apiResponse.fb_pxl_code);
+        }
+      }, false );
+    </script>
+    <!-- End Meta Pixel Event Code -->
+    <div id='fb-pxl-ajax-code'></div><!-- Google Tag Manager (noscript)  -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCL7GDX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><script type="text/javascript" src="https://eleinterior.com/interior-design-company/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://eleinterior.com/interior-design-company/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://eleinterior.com/interior-design-company/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.1" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/eleinterior.com\/interior-design-company\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://eleinterior.com/interior-design-company/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.1" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://eleinterior.com/interior-design-company/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://eleinterior.com/interior-design-company/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="divi-custom-script-js-extra">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/eleinterior.com\/interior-design-company\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/eleinterior.com\/interior-design-company\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/eleinterior.com\/interior-design-company\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"5459ef955d","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"a29a88b204","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"5","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":"https:\/\/eleinterior.com\/interior-design-company\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://eleinterior.com/interior-design-company/wp-content/themes/Divi/js/scripts.min.js?ver=4.17.4" id="divi-custom-script-js"></script>
+<script type="text/javascript" src="https://eleinterior.com/interior-design-company/wp-content/themes/Divi/js/smoothscroll.js?ver=4.17.4" id="smoothscroll-js"></script>
+<script type="text/javascript" src="https://eleinterior.com/interior-design-company/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup.js?ver=4.17.4" id="magnific-popup-js"></script>
+<script type="text/javascript" src="https://eleinterior.com/interior-design-company/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.17.4" id="salvattore-js"></script>
+<script type="text/javascript" src="https://eleinterior.com/interior-design-company/wp-content/themes/Divi/core/admin/js/common.js?ver=4.17.4" id="et-core-common-js"></script>
+	
+			<span class="et_pb_scroll_top et-pb-icon"></span>
+	</body>
+</html>
